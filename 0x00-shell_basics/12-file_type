@@ -1,0 +1,3 @@
+#!/bin/bash
+# list the type of file name iamafile in /tmp
+file /tmp/iamafile
