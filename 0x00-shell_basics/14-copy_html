@@ -1,15 +1,2 @@
 #!/bin/bash
-src_dir=$(pwd)
-dest_dir=$(dirname "$src_dir")
-
-for file in "$src_dir"/*.html
-do
-    filename=$(basename "$file")
-    dest_file="$dest_dir/$filename"
-    if [ ! -f "$dest_file" ] || [ "$file" -nt "$dest_file" ]
-    then
-        cp "$file" "$dest_dir"
-        echo "Copied $file to $dest_dir"
-    fi
-done
-
+cp *.html ..
